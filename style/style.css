@@ -193,6 +193,20 @@ textarea::placeholder {
     background-color: var(--color-primary);
 }
 
+.skewed {
+    position: absolute;
+    top: 141vh;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    width: 100%;
+    height: 10%;
+    background: #2c3e50;
+    z-index: 2;
+    transform: skewY(5deg);
+    transform-origin: top bottom;
+  }
+
 @media(max-width: 880px) {
 
     #categoria1 .categoria-card1,

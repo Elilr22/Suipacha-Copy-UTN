@@ -62,18 +62,21 @@ h3 {
 
 section {
     padding: 20px;
+    margin: auto;
 }
 
 #categorias .categoria-card,
+#categoria1 .categoria-card1,
 #nuevo .nuevo-card {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr 1fr 1fr;
     text-align: center;
     gap: 10px;
     padding: 30px;
 }
 
 #categorias .card,
+#categoria1 .card,
 #nuevo .card {
     padding: 20px;
     border: 1px solid var(--color-secondary);
@@ -82,11 +85,13 @@ section {
 }
 
 #categorias .card:hover,
+#categoria1 .card:hover,
 #nuevo .card:hover {
     transform: scale(1.03)
 }
 
 #categorias .card a,
+#categoria1 .card a,
 #nuevo .card a {
     text-decoration: none;
     border: 1px solid var(--color-secondary);
@@ -103,11 +108,11 @@ section {
 
 
 
-.boton-wpp{
+.boton-wpp {
     position: sticky;
-    left: 1460px;
-    bottom: 10px;
-    right: 10px;
+    left: 1660px;
+    bottom: 5px;
+    right: 5px;
 }
 
 
@@ -117,53 +122,105 @@ footer {
     padding: 20px;
     background-color: var(--color-secondary);
     color: white;
+    height: 100px;
 
 }
+footer div p a{
+    text-decoration: none;
+    color: black;
+}
 
-#contacto{
+#contacto {
     font-family: Arial, Helvetica, sans-serif;
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-form{
+
+form {
     padding: 50px 55px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     text-align: center;
     width: 80%;
 }
-.contenedor-contacto{
+
+.contenedor-contacto {
     display: flex;
     flex-direction: column;
     text-align: left;
 }
-label{
+
+label {
     color: black;
     font-size: 15px;
     font-weight: 600;
     margin-bottom: 15px;
 }
-input, textarea{
+
+input,
+textarea {
     padding: 17px 25px;
     border-radius: 10px;
     margin-bottom: 20px;
     background-color: rgb(221, 211, 211);
     border: 2px solid var(--color-secondary);
     color: black;
-    outline:none ;
+    outline: none;
 }
-input::placeholder,textarea::placeholder{
+
+input::placeholder,
+textarea::placeholder {
     color: var(--color-secondary);
 }
-.btn{
+
+.btn {
     font-size: 16px;
     color: white;
     box-shadow: 0 0 20px rgba(254, 8, 0, 0.4);
     background-color: var(--color-secondary);
     cursor: pointer;
 }
-.btn:hover{
+
+.btn:hover {
     background-color: var(--color-primary);
 }
+
+@media(max-width: 880px) {
+
+    #categoria1 .categoria-card1,
+    #nuevo .nuevo-card {
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+}
+
+@media(max-width: 480px) {
+
+    #categoria1 .categoria-card1,
+    #nuevo .nuevo-card {
+        grid-template-columns: 1fr;
+    }
+    .div-inicio{
+        display: grid;
+        overflow: hidden;
+    }
+    .div-inicio-card h1{
+        height: auto;
+        width: 400px;
+    } 
+    .div-inicio-card p{
+        height: auto;
+        width: 400px;
+    }
+
+    .div-inicio img{
+        height: 450px;
+    }
+
+
+}
+
+
 

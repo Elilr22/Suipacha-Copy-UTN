@@ -33,11 +33,18 @@ header nav ul li a {
     text-decoration: none;
     color: var(--color-Tertiary);
 }
+#inicio{
+    background-image: url(../img/fondo-maso1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 .div-inicio {
     display: flex;
     align-items: center;
     height: 100vh;
+    width: 80%;
+    margin: auto;
 }
 
 h1 {
@@ -193,6 +200,9 @@ textarea::placeholder {
         grid-template-columns: 1fr 1fr;
 
     }
+    #inicio{
+        background-image: none;
+    }
 
 }
 
@@ -204,19 +214,16 @@ textarea::placeholder {
     }
     .div-inicio{
         display: grid;
-        overflow: hidden;
-    }
-    .div-inicio-card h1{
-        height: auto;
-        width: 400px;
-    } 
-    .div-inicio-card p{
-        height: auto;
-        width: 400px;
+        justify-content: center;
+        align-items: center;
     }
 
     .div-inicio img{
         height: 450px;
+    }
+    #inicio{
+
+        height: 1000px;        
     }
 
 

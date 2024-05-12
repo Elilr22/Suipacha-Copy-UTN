@@ -245,3 +245,15 @@ textarea::placeholder {
 
 
 
+.separador{
+    width: 0;
+    height: 0;
+    border-right: 100vw solid transparent;
+    border-bottom: 13.9vw solid var(--color-secondary);
+    margin-top: -13.9vw;
+}
+
+.separador2{
+    background-color: rgb(255, 255, 255);
+    height: 140px;
+}

@@ -217,6 +217,9 @@ textarea::placeholder {
     #inicio{
         background-image: none;
     }
+    .boton-wpp{
+        left: 92%;
+    }
 
 }
 
@@ -238,6 +241,9 @@ textarea::placeholder {
     #inicio{
 
         height: 1000px;        
+    }
+    .boton-wpp{
+        left: 87%;
     }
 
 

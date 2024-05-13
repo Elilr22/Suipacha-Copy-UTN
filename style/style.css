@@ -116,8 +116,8 @@ section {
 
 
 .boton-wpp {
-    position: sticky;
-    left: 1660px;
+    position: fixed;
+    left: 97%;
     bottom: 5px;
     right: 5px;
 }
@@ -193,7 +193,7 @@ textarea::placeholder {
     background-color: var(--color-primary);
 }
 
-.skewed {
+/* .skewed {
     position: absolute;
     top: 141vh;
     bottom: 0;
@@ -205,7 +205,7 @@ textarea::placeholder {
     z-index: 2;
     transform: skewY(5deg);
     transform-origin: top bottom;
-  }
+  } */
 
 @media(max-width: 880px) {
 
